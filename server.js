@@ -5,44 +5,10 @@ const { SocketAddress } = require('net');
 const io = require('socket.io')(http);
 const users = [];
 const restos = [
-    {
-        list: [
-            {
-                first_name: 'Prameet',
-                last_name: 'Manraj',
-                id: 0
-            },
-            {
-                first_name: 'Oscar',
-                last_name: 'Woodhouse',
-                id: 0
-            },
-        ]
-    },
-    {
-        list: [
-            {
-                first_name: 'Balthazar',
-                last_name: 'Papin',
-                id: 0
-            },
-        ]
-    },
     { list: [] },
-    {
-        list: [
-            {
-                first_name: 'Léonard',
-                last_name: 'De Vinci',
-                id: 0
-            },
-            {
-                first_name: 'Cyprien',
-                last_name: 'Thao',
-                id: 0
-            },
-        ]
-    },
+    { list: [] },
+    { list: [] },
+    { list: [] },
     { list: [] },
     { list: [] },
     { list: [] },
