@@ -50,12 +50,13 @@ const iconElem = L.icon({
     iconUrl: "../assets/svg/Frame 1.svg",
 });
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     minZoom: 15,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
     detectRetina: true,
+    accessToken: "pk.eyJ1IjoiaW5zZWNrZXIiLCJhIjoiY2tmanl6ZDQzMG01djMwcWhnN2wxbDFteSJ9.P382aH9Ji7TBADuQVmpdRA",
 }).addTo(mymap);
 
 const popup = document.querySelector('.popup')
@@ -64,9 +65,11 @@ const forName = document.getElementById('for_name');
 const lastName = document.getElementById('last_name');
 const userInfos = document.getElementById('userInfos')
 
+console.log();
+
 // SOCKET
 
-const socket = io('http://localhost:8080');
+const socket = io(window.location.href + ':8080');
 
 if (localStorage.getItem('forename') && localStorage.getItem('lastname')) {
     connectClient();
