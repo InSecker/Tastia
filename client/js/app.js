@@ -65,11 +65,9 @@ const forName = document.getElementById('for_name');
 const lastName = document.getElementById('last_name');
 const userInfos = document.getElementById('userInfos')
 
-console.log(window.location.href + ':8080');
-
 // SOCKET
 
-const socket = io('https://app-e06d98fa-f28a-4c52-8600-e39229e5e556.cleverapps.io:8080');
+const socket = io();
 
 if (localStorage.getItem('forename') && localStorage.getItem('lastname')) {
     connectClient();
