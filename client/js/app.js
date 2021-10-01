@@ -65,7 +65,7 @@ const forName = document.getElementById('for_name');
 const lastName = document.getElementById('last_name');
 const userInfos = document.getElementById('userInfos')
 
-console.log();
+console.log(window.location.href + ':8080');
 
 // SOCKET
 
