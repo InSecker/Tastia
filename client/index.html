@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tastia</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+		<script
+			src="https://cdn.socket.io/4.2.0/socket.io.min.js"
+			integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="js/app.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="map" id="mapid"></div>
+			<div class="popup">
+				<div class="form">
+					<h1>Qui êtes-vous ?</h1>
+					<p class="intro">
+						Bienvenue sur Tastia,<br />
+						la plateforme qui vous met en relation avec vos collègues pour aller
+						déjeuner ensembles.<br />
+						Merci de renseigner votre prénom votre nom afin de continuer.
+					</p>
+					<label>
+						<input id="for_name" class="field" placeholder="Prénom" />
+					</label>
+					<label>
+						<input id="last_name" class="field" placeholder="Nom" />
+					</label>
+					<button id="button" class="button">C'est parti !</button>
+				</div>
+			</div>
+			<div class="userInfos">
+				<p class="text" id="userInfos"></p>
+			</div>
+			<div class="currentResto offscreen" id="restoContainer">
+				<h2 class="title" id="title"></h2>
+				<ul class="list" id="list"></ul>
+				<button id="restoButton" class="resto_button button">M'inscrire</button>
+			</div>
+		</div>
+	</body>
+</html>
