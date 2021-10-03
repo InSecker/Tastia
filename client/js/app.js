@@ -23,7 +23,7 @@ var json = [
     },
     {
         name: "Mongoo",
-        coord: [48.8957198, 2.2367614]
+        coord: [48.8954929, 2.236824]
     },
     {
         name: "Monoprix",
@@ -31,7 +31,7 @@ var json = [
     },
     {
         name: "Bistrot du Fauxbourg",
-        coord: [48.8957926, 2.2369127]
+        coord: [48.8958866, 2.2374649]
     },
 ];
 

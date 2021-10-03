@@ -176,10 +176,27 @@ li {
 	font-family: 'Lato';
 	transform: translateX(-50%);
 	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
 }
 
 .intro {
 	font-family: 'Lato';
 	line-height: 1.5;
 	text-align: center;
+}
+
+.info-button {
+	transition: transform 300ms ease;
+}
+
+.info-button:hover {
+	transform: scale(1.2);
+}
+
+.svg {
+	fill: #62b8e4;
+	width: 30px;
+	height: 30px;
 }
